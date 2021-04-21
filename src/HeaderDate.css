@@ -1,0 +1,15 @@
+.HeaderDate h3 {
+  color: floralwhite;
+  font-size: 25px;
+  text-align: left;
+  line-height: 1;
+  padding-left: 15px;
+}
+
+.HeaderDate li {
+  color: floralwhite;
+  font-weight: bold;
+  list-style: none;
+  padding-right: 15px;
+  padding-top: 35px;
+}

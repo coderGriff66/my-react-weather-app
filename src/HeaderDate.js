@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./HeaderDate.css";
+
 export default function HeaderDate() {
   return(
     <div className="row">
