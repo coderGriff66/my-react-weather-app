@@ -1,7 +1,7 @@
 import React from "react";
 import WeatherConditions from "./WeatherConditions";
 import HeaderDate from "./HeaderDate";
-
+import SearchEngine from "./SearchEngine";
 import './App.css';
 
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
     <div className="App">
       <div className="container">
        <HeaderDate /> 
-        
+       <SearchEngine />
         
         <WeatherConditions />
 
