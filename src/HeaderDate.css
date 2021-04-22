@@ -1,4 +1,4 @@
-.HeaderDate h3 {
+.HeaderDate Today {
   color: floralwhite;
   font-size: 25px;
   text-align: left;
@@ -9,6 +9,7 @@
 .HeaderDate li {
   color: floralwhite;
   font-weight: bold;
+  text-align: right;
   list-style: none;
   padding-right: 15px;
   padding-top: 35px;
