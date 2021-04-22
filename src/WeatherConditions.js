@@ -19,10 +19,9 @@ export default function WeatherConditions() {
 
     });
     
-    setReady(true);
   }
 
-   if (ready) {
+   if (weatherData.ready) {
   return (
     <div className="WeatherConditions">
       <div className="row">
@@ -40,7 +39,7 @@ export default function WeatherConditions() {
             <div className="Card Rightside">
              <ul className="Conditions">
               <li>Feels Like: {weatherData.feels_like}°</li>
-              <li>Barometer: {weatherData.baromrter}</li>
+              <li>Barometer: {weatherData.barometer}</li>
               <li>Humidity: {weatherData.humidity}%</li>
               <li>Wind: {weatherData.wind} km/h</li>
               <li>Day's Low Temp: {weatherData.min_temp}°</li>
@@ -57,7 +56,7 @@ export default function WeatherConditions() {
   let city="Detroit";
   let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
-  axios.get(apiUrl). then(handleResponse);
+  axios.get(apiUrl).then(handleResponse);
 
     return "Loading";
   }
