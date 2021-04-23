@@ -30,7 +30,7 @@ export default function WeatherConditions() {
             <h2 classNmae="text-capitalize">{weatherData.description}</h2>
             <div className="clearfix">
               <img src="/" alt="Clear_Sky" className="float-left"/>
-                <span ClassName="temperature">{Math.round(weatherhData.temperature)}</span>
+                <span ClassName="temperature">{Math.round(weatherData.temperature)}</span>
                 <span className="unit">°C</span>
             </div>
           </div>
