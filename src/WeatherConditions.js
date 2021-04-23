@@ -8,6 +8,7 @@ export default function WeatherConditions() {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
+      date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       description: response.data.weather[0].description,
       feelsLike: response.data.main.feels_like,
