@@ -1,3 +1,18 @@
 .WeatherConditions ul {
+  font-size: 20px;
   list-style: none;
 }
+
+.WeatherConditions h2 {
+  font-size: 30px;
+  text-align: center;
+}
+ .WeatherConditions temperature {
+   font-size: 75px;
+}
+
+.WeatherConditions img {
+  size: 100px;
+}
+
+

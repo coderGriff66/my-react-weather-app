@@ -1,9 +1,9 @@
 import React from "react";
-import WeatherConditions from "./WeatherConditions";
+
 
 import "./HeaderDate.css";
 
-export default function HeaderDate(props) {
+export default function HeaderDate() {
 
   let days = [
     "Sunday",
@@ -28,16 +28,17 @@ export default function HeaderDate(props) {
     "November",
     "December"
   ];
-   <WeatherConditions  (response.data.dt * 1000) />
-   let now = new Date(timestamp);
+  
+   let now = new Date();
    let date = now.getDate();
-   let day = days[props.date.getDay()];
-   let month = months[props.date.getMonth()];
-   let hours = props.date.getHours();
+   let day = days[now.getDay()];
+   let month = months[now.getMonth()];
+   let year = now.getFullYear();
+   let hours = now.getHours();
    if (hours < 10) {
      hours =`0${hours}`;
    }
-   let minutes = props.date.getMinutes();
+   let minutes = now.getMinutes();
    if (minutes < 10) {
      minutes = `0${minutes}`;
    } 
@@ -52,7 +53,7 @@ export default function HeaderDate(props) {
             <div className="col-6">
               <ul className="Today">
                 <li>
-                  <strong>{day}, {month} {date}, (year}</strong>
+                  <strong>{day}, {month} {date}, {year}</strong>
                 </li>
                 <li>
                   <strong>{hours}:{minutes}</strong>
